@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.javafxbbdd.TableViewController">
+   <children>
+      <TableView fx:id="tab_vehiculo" layoutX="43.0" layoutY="167.0" prefHeight="200.0" prefWidth="515.0">
+         <columns>
+            <TableColumn fx:id="col_matricula" prefWidth="75.0" text="Matrícula" />
+            <TableColumn fx:id="col_marca" prefWidth="75.0" text="Marca" />
+            <TableColumn fx:id="col_precio" prefWidth="75.0" text="Precio" />
+            <TableColumn fx:id="col_fecha_alquiler" prefWidth="121.0" text="Fecha de alquiler" />
+            <TableColumn fx:id="col_fecha_entrega" prefWidth="103.0" text="Fecha de entrega" />
+            <TableColumn fx:id="col_total" prefWidth="65.0" text="Total" />
+         </columns>
+      </TableView>
+      <DatePicker fx:id="date_fecha_inicial" layoutX="58.0" layoutY="90.0" />
+      <DatePicker fx:id="date_fecha_final" layoutX="384.0" layoutY="90.0" />
+      <MenuButton fx:id="selec_cliente" layoutX="279.0" layoutY="90.0" mnemonicParsing="false" text="Clientes">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Action 1" />
+          <MenuItem mnemonicParsing="false" text="Action 2" />
+        </items>
+      </MenuButton>
+      <Label layoutX="113.0" layoutY="73.0" text="Fecha inicial" />
+      <Label layoutX="434.0" layoutY="73.0" text="Fecha final" />
+   </children>
+</AnchorPane>
